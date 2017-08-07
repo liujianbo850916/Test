@@ -17,7 +17,7 @@ class TestApi(unittest.TestCase):
 
     def test_login(self):
         url = "http://www.4snow.cn/Home/Index/go/op/login"
-        data = {"login":"tiandao_admin","pwd":"qwer1234"}
+        data = {"login":"wangyang","pwd":"qwer1234"}
         result = self.api.http_request("POST",url,data,True)
         self.assertEqual(result["status"],0)
         self.assertEqual(result["data"]["loginname"],u"tiandao_admin")
